@@ -58,6 +58,9 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapSwitchLight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rbc-Js-Qyk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -71,6 +74,12 @@
                             <constraint firstItem="B21-Uc-X0H" firstAttribute="top" relation="greaterThanOrEqual" secondItem="nMz-N4-PI0" secondAttribute="bottom" constant="16" id="t0B-1j-kRY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLightView" destination="qVE-po-acb" id="Oz2-bF-iuu"/>
+                        <outlet property="lightControlButton" destination="B21-Uc-X0H" id="Zwf-59-wna"/>
+                        <outlet property="redLightView" destination="I4y-kN-Q0W" id="917-T9-cdL"/>
+                        <outlet property="yellowLightView" destination="7ux-NB-y0g" id="QLK-bJ-PxW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
